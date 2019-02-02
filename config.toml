@@ -1,0 +1,29 @@
+baseURL = "https://tcheinen.github.io"
+languageCode = "en-us"
+title = "Teddy Heinen"
+theme = "strange-case"
+
+[params]
+    colorScheme = "scheme-custom"
+    DateFormat = "2019 2 2"
+    description = ""
+    sidebarDescription = ""
+    sidebarFreeText = "I'm a 20 year old Computer Science student at Texas A&M.  I enjoy reading Sci-Fi and Fantasy books and strategy games.  I program a lot in my free time and am currently interested in game console emulation.  I love writing scripts to automate basically anything I do repeatedly.  "
+	
+	
+[menu]
+  [[menu.main]]
+    identifier = "jwordpresscraper"
+    name = "Java Wordpress Scraper"
+    title = "jwordpresscraper"
+    url = "https://github.com/tcheinen/JWordpressScraper"
+  [[menu.main]]
+    identifier = "chip8"
+    name = "CHIP8 Emulator"
+    title = "chip8"
+    url = "https://github.com/tcheinen/chip8"
+  [[menu.main]]
+	identifier = "other"
+	name = "Quite a few other things as well"
+	title = "Other"
+	url = "https://github.com/tcheinen?tab=repositories"
