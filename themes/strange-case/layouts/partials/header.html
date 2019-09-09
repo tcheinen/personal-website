@@ -13,9 +13,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="{{ .Site.BaseURL }}/css/bootstrap.min.css" rel="stylesheet">
 	<link href="{{ .Site.BaseURL }}/css/strange-case.css" rel="stylesheet">
-	<link href="/style.css" rel="stylesheet">
-	<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
-	<script src="/packery.pkgd.js"></script>
+	<link href="{{ .Site.BaseURL }}/style.css" rel="stylesheet">
+	<script src="https://unpkg.com/packery@2.1.2/dist/packery.pkgd.min.js"></script>
 	<!--<style type="text/css" media="all">
 		# Optional: comment out strange-case.css above, minify it with YUICompressor and paste inline styles here to lose a request...
 	</style>-->
@@ -28,4 +27,3 @@
 	{{ "<![endif]-->" | safeHTML }}
 </head>
 <body class="{{ .Site.Params.colorScheme }}">
-	<script src="/script.js"></script>

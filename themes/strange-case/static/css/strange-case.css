@@ -88,6 +88,7 @@ img {
 }
 .sidebar .sidebar-freetext {
 	margin-top: 1.5em;
+	font-size: calc(10px + .5vw);
 }
 .sidebar .sidebar-menus {
 	padding-left: 0;
@@ -127,10 +128,13 @@ img {
 	}
 	.sidebar-bottom {
 		bottom: 1em;
+		left: 0px;
 		position: fixed;
+		text-align:center;
+		width: 25%;
 	}
 	.sidebar .sidebar-content {
-		width:75%;
+		/*width:75%;*/
 		margin:0 auto;
 	}
 }
@@ -170,13 +174,14 @@ p.attr {
 .social-links {
 	width: 100%;
 	text-align: center;
+	margin-bottom:0px;
 }
 .social-image {
 	display:inline-block;
-	width: 64px;
-	height: 64px;
-	margin-left: 20px;
-	margin-right: 20px;
+	color: grey;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	font-size: calc(25px + 1vw) !important;
 }
 /* THEMES */
 
