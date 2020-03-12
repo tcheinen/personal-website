@@ -1,10 +1,9 @@
 baseURL = "https://teddyheinen.com"
 languageCode = "en-us"
 title = "Teddy Heinen"
-theme = "strange-case"
+theme = "personal"
 
 [params]
-    colorScheme = "scheme-custom"
     DateFormat = "2019 2 2"
     description = ""
     sidebarDescription = ""

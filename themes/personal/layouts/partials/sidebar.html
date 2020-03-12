@@ -1,0 +1,21 @@
+<div class="pure-menu sidebar-content">
+    <a href="{{ .Site.BaseURL }}">
+        <span class="pure-menu-heading"><h1>{{ .Site.Title }}</h1></span>
+    </a>
+    <div class="sidebar-freetext">
+        <p>{{ .Site.Params.sidebarFreeText }}</p>
+    </div>
+    <ul class="pure-menu-list">
+        {{ range .Site.Menus.main }}
+            <li class="pure-menu-item nav-item" id="{{ .Identifier }}">&#187;{{ .Name }}</li>
+        {{end}}
+    </ul>
+    <div class="sidebar-bottom">
+        <div class="social-links">
+            <a href="https://github.com/tcheinen"><i class="icon-github social-image"></i></a>
+            <a href="https://www.linkedin.com/in/teddyheinen/"><i class="icon-linkedin social-image"></i></a>
+            <a href="{{ .Site.BaseURL }}/teddyheinen-resume.pdf"><i class="icon-file-text2 social-image"></i></a>
+        </div>
+        <p class="copyright">{{ with .Site.Params.copyright }}{{ . }}{{ else }}&copy; {{ now.Format "2006" }}. All rights reserved. {{end}}</p>
+    </div>
+</div>
