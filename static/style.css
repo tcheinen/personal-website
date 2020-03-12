@@ -1,34 +1,50 @@
-
 body {
   height: 100vh;
-  font-family: 'Fira Code', monospace !important;
 }
 
-.sidebar {
-  position: fixed;
-  float: left;
-  max-width: 40vh;
-  height: 100%;
-  background-color: #0b132b;
-  color: #DCCBFF;
-  z-index: 1;
+@media (min-width:768px) {
+  .sidebar {
+    position: fixed;
+    float: left;
+    max-width: 40vh;
+    height: 100%;
+    background-color: #0b132b;
+    color: #DCCBFF;
+    z-index: 1;
+  }
+}
+
+@media (max-width:768px) {
+  .sidebar {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: #0b132b;
+    color: #DCCBFF;
+    z-index: 1;
+  }
+
+}
+
+.sidebar-bottom {
+  bottom: 0px;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .sidebar-content {
   width: 85%;
+  height: 100%;
   margin: 0 auto;
 }
 
 .sidebar-freetext {
   font-size: calc(5px + 1.5vh);
-}
-
-.sidebar-bottom {
-    bottom: 1em;
-    left: 0px;
-    position: fixed;
-    text-align:center;
-    width: 40vh;
 }
 
 .nav-item {
@@ -38,19 +54,28 @@ body {
 }
 
 .nav-item:hover {
-    background-color:rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.content {
-  padding-left: 40vh;
-  position: relative;
+@media (min-width:768px) {
+  .content {
+    padding-left: 40vh;
+    position: relative;
+  }
+
+}
+
+@media (max-width:768px) {
+  .content {
+    width: 100%;
+  }
+
 }
 
 .pure-menu-heading {
   text-transform: uppercase;
   color: #ba9bff;
 }
-
 
 .height-100-vh {
   height: 100vh;
@@ -59,11 +84,11 @@ body {
 .social-links {
   width: 100%;
   text-align: center;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
 .social-image {
-  display:inline-block;
+  display: inline-block;
   color: grey;
   margin-left: 1vw;
   margin-right: 1vw;
@@ -78,18 +103,19 @@ body {
 }
 
 .card {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 0px;
 }
+
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -98,17 +124,15 @@ body {
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?c7kikr');
-  src:  url('fonts/icomoon.eot?c7kikr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?c7kikr') format('truetype'),
-    url('fonts/icomoon.woff?c7kikr') format('woff'),
-    url('fonts/icomoon.svg?c7kikr#icomoon') format('svg');
+  src: url('fonts/icomoon.eot?c7kikr');
+  src: url('fonts/icomoon.eot?c7kikr#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?c7kikr') format('truetype'), url('fonts/icomoon.woff?c7kikr') format('woff'), url('fonts/icomoon.svg?c7kikr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
+
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -116,9 +140,7 @@ body {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
+  line-height: 1;  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -126,13 +148,15 @@ body {
 .icon-github:before {
   content: "\e900";
 }
+
 .icon-file-text2:before {
   content: "\e926";
 }
+
 .icon-linkedin:before {
   content: "\eac9";
 }
 
 .grid-item {
-    margin-top: 10px;
+  margin-top: 10px;
 }

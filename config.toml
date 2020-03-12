@@ -23,8 +23,4 @@ theme = "personal"
     identifier = "interests-menu"
     name = "Interests"
     title = "interests"
-  [[menu.main]]
-    identifier = "service-menu"
-    name = "Service"
-    title = "service"
     
