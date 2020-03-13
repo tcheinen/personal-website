@@ -1,12 +1,18 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
   height: 100vh;
+  margin: 0;
 }
 
 @media (min-width:768px) {
   .sidebar {
     position: fixed;
     float: left;
-    max-width: 40vh;
+    max-width: 400px;
     height: 100%;
     background-color: #0b132b;
     color: #DCCBFF;
@@ -59,7 +65,7 @@ body {
 
 @media (min-width:768px) {
   .content {
-    padding-left: 40vh;
+    padding-left: 400px;
     position: relative;
   }
 
